@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    
+    <title>Credit Card Fraud Detection</title>
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+	<div class="login">
+	<h1>CREDIT CARD FRAUD DETECTION</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('y_predict')}}"method="post">
+    	<input class="time" type="text" name="f1" placeholder="TIME" required="required" /> 
+        
+        <input class="v1" type="text" name="f2" placeholder="V1" required="required" />
+        
+        <input class="v2" type="text" name="f3" placeholder="V2" required="required" />
+        <input class="v3" type="text" name="f4" placeholder="V3" required="required" />
+        <input class="v4" type="text" name="f5" placeholder="V4" required="required" />
+        <input class="v5" type="text" name="f6" placeholder="V5" required="required" />
+        <input class="v6" type="text" name="f7" placeholder="V6" required="required" />
+        <input class="v7" type="text" name="f8" placeholder="V7" required="required"/>
+        <input class="v8" type="text" name="f9" placeholder="V8" required="required" />
+        <input class="v9" type="text" name="f10" placeholder="V9" required="required" />
+        <input class="v10" type="text" name="f11" placeholder="V10" required="required" />
+        <input class="v11" type="text" name="f12" placeholder="V11" required="required" />
+        <input class="v12" type="text" name="f13" placeholder="V12" required="required" />
+        <input class="v13" type="text" name="f14" placeholder="V13" required="required" />
+        <input class="v14" type="text" name="f15" placeholder="V14" required="required" />
+        <input class="v15" type="text" name="f16" placeholder="V15" required="required" />
+        <input class="v16" type="text" name="f17" placeholder="V16" required="required" />
+        <input class="v17" type="text" name="f18" placeholder="V17" required="required" />
+        <input class="v18" type="text" name="f19" placeholder="V18" required="required" />
+        <input class="v19" type="text" name="f20" placeholder="V19" required="required" />
+        <input class="v20" type="text" name="f21" placeholder="V20" required="required" />
+        <input class="v21" type="text" name="f22" placeholder="V21" required="required" />
+        <input class="v22" type="text" name="f23" placeholder="V22" required="required" />
+        <input class="v23" type="text" name="f24" placeholder="V23" required="required" />
+        <input class="v24" type="text" name="f25" placeholder="V24" required="required" />
+        <input class="v25" type="text" name="f26" placeholder="V25" required="required" />
+        <input class="v26" type="text" name="f27" placeholder="V26" required="required" />
+        <input class="v27" type="text" name="f28" placeholder="V27" required="required" />
+        <input class="v28" type="text" name="f29" placeholder="V28" required="required" />
+        <input class="amount" type="text" name="f30" placeholder="AMOUNT" required="required" />
+    
+         
+        
+        
+        <button type="submit" class="btn">DETECT</button>
+    
+    </form>
+
+   <br>
+   <br>
+   <div class=output>
+   {{ prediction_text }}
+   </div>
+  </div>
+</body>
+</html>
