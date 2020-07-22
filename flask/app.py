@@ -20,7 +20,7 @@ def y_predict():
     '''
     For rendering results on HTML GUI
     '''
-    x_test = [[int(x) for x in request.form.values()]]
+    x_test = [[float(x) for x in request.form.values()]]
     
     prediction = model.predict(x_test)
     print(prediction)
